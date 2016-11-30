@@ -8,6 +8,7 @@ import {GeneratedTestPage} from './pages/generated-test/generated-test'
 import{ConnectionService} from './providers/connection-service/connection-service'
 
 import {AlertPage} from './pages/alert/alert' ;
+import {ButtonTestPage} from './pages/button-test/button-test';
 
 
 @Component({
@@ -27,7 +28,8 @@ export class MyApp {
       {component: HomePage, title:'Home', icon:'home'},
       {component: MenuTestPage, title:'Menu Test', icon:'menu'},
       {component: GeneratedTestPage, title:'Generated Page', icon:'home'},
-      {component: AlertPage, title:'Alert Page', icon:'home'}
+      {component: AlertPage, title:'Alert Page', icon:'home'},
+      {component: ButtonTestPage, title:'Button Test Page', icon:'home'}
     ]
 
     platform.ready().then(() => {
