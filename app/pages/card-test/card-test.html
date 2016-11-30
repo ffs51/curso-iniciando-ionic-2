@@ -1,0 +1,95 @@
+<!--
+  Generated template for the CardTestPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-navbar *navbar>
+
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+
+  <ion-title>Card</ion-title>
+
+  <ion-buttons right>
+    <button menuToggle="right">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-buttons>
+
+
+</ion-navbar>
+
+<ion-content  class="card-test">
+
+<ion-card>
+  <ion-card-header>
+    Ionic 2
+  </ion-card-header>
+  <ion-card-content>
+    <p>Olá Mundo!</p>
+  </ion-card-content>
+</ion-card>
+
+<!-- Modo de fazer do curso v1 -->
+<ion-card>
+  <img src="./../../images/matchbox.jpg" alt="Imagem do carrinho!">
+  <ion-card-content>
+    <ion-card-title>
+      Carrinhos MatchBox
+    </ion-card-title>
+      <p>5o carro produzido pela Matchbo</p>
+  </ion-card-content>
+
+  <ion-row>
+
+    <ion-col>
+      <button clear small>
+        <ion-icon name="star"></ion-icon>
+        Favorito
+      </button>
+    </ion-col>
+
+    <ion-col text-center>
+      <button clear small>
+        <ion-icon name="musical-notes"></ion-icon>
+        Escutar
+      </button>
+    </ion-col>
+
+    <ion-col text-right>
+      <button clear small>
+        <ion-icon name="share"></ion-icon>
+        Compartilhar
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+
+<!-- modo de fazer curdo v2 -->
+<ion-card>
+
+<img src="./../../images/matchbox.jpg" alt="carro2">
+
+  <ion-card-content>
+    <ion-card-title>
+      Card 2 Matchbox
+    </ion-card-title>
+  </ion-card-content>
+
+  <ion-row no-padding>
+    <ion-col ion-item *ngFor="let b of barraBotoes" class="{{b.posicao}}">
+      <button clear="{{b.clear}}" style="{{b.tipoBotao}}">
+        <ion-icon name="{{b.nomeIcone}}"></ion-icon>
+        {{b.nomeBotao}}
+      </button>
+    </ion-col> 
+
+  </ion-row>
+
+
+</ion-card>
+
+</ion-content>

@@ -9,6 +9,9 @@ import{ConnectionService} from './providers/connection-service/connection-servic
 
 import {AlertPage} from './pages/alert/alert' ;
 import {ButtonTestPage} from './pages/button-test/button-test';
+import {CardTestPage} from './pages/card-test/card-test';
+import {IconTestPage} from './pages/icon-test/icon-test';
+import {InputTestPage} from './pages/input-test/input-test';
 
 
 @Component({
@@ -29,7 +32,10 @@ export class MyApp {
       {component: MenuTestPage, title:'Menu Test', icon:'menu'},
       {component: GeneratedTestPage, title:'Generated Page', icon:'home'},
       {component: AlertPage, title:'Alert Page', icon:'home'},
-      {component: ButtonTestPage, title:'Button Test Page', icon:'home'}
+      {component: ButtonTestPage, title:'Button Test Page', icon:'home'},
+      {component: CardTestPage, title:'Card Test Page', icon:'home'},
+      {component: IconTestPage, title:'Icon Test Page', icon:'bus'},
+      {component: InputTestPage, title:'Input Test Page', icon:'call'}
     ]
 
     platform.ready().then(() => {
