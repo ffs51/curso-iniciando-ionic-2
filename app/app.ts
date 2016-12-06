@@ -12,6 +12,8 @@ import {ButtonTestPage} from './pages/button-test/button-test';
 import {CardTestPage} from './pages/card-test/card-test';
 import {IconTestPage} from './pages/icon-test/icon-test';
 import {InputTestPage} from './pages/input-test/input-test';
+import {ListTestPage} from './pages/list-test/list-test';
+import {GridTestPagePage} from './pages/grid-test-page/grid-test-page';
 
 
 @Component({
@@ -35,7 +37,9 @@ export class MyApp {
       {component: ButtonTestPage, title:'Button Test Page', icon:'home'},
       {component: CardTestPage, title:'Card Test Page', icon:'home'},
       {component: IconTestPage, title:'Icon Test Page', icon:'bus'},
-      {component: InputTestPage, title:'Input Test Page', icon:'call'}
+      {component: InputTestPage, title:'Input Test Page', icon:'call'},
+      {component: ListTestPage, title:'List Test Page', icon:'bus'},
+      {component: GridTestPagePage, title:'Grid Test Page', icon:'home'}
     ]
 
     platform.ready().then(() => {
