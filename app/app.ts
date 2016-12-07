@@ -14,6 +14,7 @@ import {IconTestPage} from './pages/icon-test/icon-test';
 import {InputTestPage} from './pages/input-test/input-test';
 import {ListTestPage} from './pages/list-test/list-test';
 import {GridTestPagePage} from './pages/grid-test-page/grid-test-page';
+import {ModalTestPage} from './pages/modal-test/modal-test';
 
 
 @Component({
@@ -30,6 +31,7 @@ export class MyApp {
   constructor(platform: Platform, private menuCtrl: MenuController) {
 
     this.pages = [
+      {component: ModalTestPage, title:'Modal Test Page', icon:'menu'},
       {component: HomePage, title:'Home', icon:'home'},
       {component: MenuTestPage, title:'Menu Test', icon:'menu'},
       {component: GeneratedTestPage, title:'Generated Page', icon:'home'},
@@ -40,6 +42,7 @@ export class MyApp {
       {component: InputTestPage, title:'Input Test Page', icon:'call'},
       {component: ListTestPage, title:'List Test Page', icon:'bus'},
       {component: GridTestPagePage, title:'Grid Test Page', icon:'home'}
+
     ]
 
     platform.ready().then(() => {
